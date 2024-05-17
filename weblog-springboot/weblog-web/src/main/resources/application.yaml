@@ -13,7 +13,7 @@ spring:
     multipart:
       # 限制上传文件大小
       max-file-size: 10MB
-      
+
 jwt:
   # 签发人
   issuer: quanxiaoha
@@ -26,7 +26,7 @@ jwt:
   # token Header 中的 value 值前缀
   tokenPrefix: Bearer
 
-  
+
 #=================================================================
 # minio (上传图片需要，需配置成自己的地址)
 #=================================================================
@@ -40,4 +40,4 @@ minio:
 # IP归属地信息库文件路径 ip2region.xdb
 #=================================================================
 xdb:
-  profile: xxx
+  profile: ip2region.xdb
