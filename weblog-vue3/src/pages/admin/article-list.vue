@@ -1,5 +1,5 @@
 <template>
-    
+
     <el-card shadow="never" :body-style="{ padding: '20px' }" class="mb-5 border-1">
         <!-- card body -->
         <el-text class="mx-1 mr-3">文章标题</el-text>
@@ -322,7 +322,7 @@ const rules = {
         { min: 1, max: 40, message: '文章标题要求大于1个字符，小于40个字符', trigger: 'blur' },
     ],
     content: [{ required: true }],
-    titleImage: [{ required: true }],
+    titleImage: [{ required: false }],
     categoryId: [{ required: true, message: '请选择文章分类', trigger: 'blur' }],
     tags: [{ required: true, message: '请选择文章标签', trigger: 'blur' }],
     description: [{ required: true, message: '请输入文章摘要', trigger: 'blur' }],

@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import {createRouter, createWebHashHistory} from 'vue-router';
 import AdminIndex from '@/pages/admin/index.vue';
 import About from '@/pages/about.vue';
 import NotFound from '@/pages/404.vue';
@@ -15,6 +15,7 @@ import TagList from '@/pages/frontend/tag-list.vue'
 import CategoryArticleList from '@/pages/frontend/category-article-list.vue'
 import TagArticleList from '@/pages/frontend/tag-article-list.vue'
 import ArchiveList from '@/pages/frontend/archive-list.vue'
+import St from '@/pages/st/jizhang.vue'
 
 const routes = [
     {
@@ -52,7 +53,14 @@ const routes = [
             meta: {
                 title: '博客设置'
             }
-        }]
+        }, {
+            path: '/st/new',
+            component: St,
+            meta: {
+                title: '测试'
+            }
+        }
+        ]
 
     },
     {

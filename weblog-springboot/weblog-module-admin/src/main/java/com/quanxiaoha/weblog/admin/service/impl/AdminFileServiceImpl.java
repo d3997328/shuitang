@@ -25,7 +25,7 @@ public class AdminFileServiceImpl implements AdminFileService {
     private MinioUtil minioUtil;
 
     @Override
-    public Response uploadFile(MultipartFile file) {
+    public Response<UploadFileRspVO> uploadFile(MultipartFile file) {
         try {
             String url = minioUtil.uploadFile(file);
             return Response.success(UploadFileRspVO.builder().url(url).build());

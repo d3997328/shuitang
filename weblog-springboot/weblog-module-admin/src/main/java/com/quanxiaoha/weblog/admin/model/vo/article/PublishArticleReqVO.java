@@ -25,7 +25,6 @@ public class PublishArticleReqVO {
     @NotBlank(message = "文章内容不能为空")
     private String content;
 
-    @NotBlank(message = "文章头图不能为空")
     private String titleImage;
 
     @NotBlank(message = "文章摘要不能为空")
